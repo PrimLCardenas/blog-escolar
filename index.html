@@ -3,87 +3,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Escolar</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f2f2f2;
-            color: #333;
-        }
+    <title>La Voz Escolar</title>
 
-        header {
-            background-color: #2563eb;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
-
-        main {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 20px;
-        }
-
-        article {
-            background: white;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
-
-        h1, h2 {
-            margin-top: 0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #222;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
 
-<header>
-    <h1>La Voz de Nuestra Escuela</h1>
-    <p>Noticias, proyectos y actividades escolares</p>
+<header class="encabezado">
+
+    <div class="contenedor barra">
+
+        <div class="logo">
+            <span>🎓</span>
+            <div>
+                <h1>La Voz Escolar</h1>
+                <p>El blog de nuestra comunidad</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="galeria.html">Galería</a>
+            <a href="eventos.html">Eventos</a>
+        </nav>
+
+    </div>
+
 </header>
 
-<main>
 
-    <article>
-        <h2>Bienvenidos a nuestro blog</h2>
-        <p>
-            Este blog fue creado para compartir noticias,
-            proyectos, actividades y acontecimientos de nuestra escuela.
-        </p>
-    </article>
+<section class="hero">
 
-    <article>
-        <h2>Actividad escolar</h2>
-        <p>
-            En esta sección podemos publicar información
-            sobre las actividades realizadas por los estudiantes.
-        </p>
-    </article>
+    <div class="contenedor hero-contenido">
 
-    <article>
-        <h2>Curiosidades</h2>
-        <p>
-            Aquí podemos compartir datos interesantes relacionados
-            con las materias que estudiamos.
-        </p>
-    </article>
+        <div>
+            <span class="etiqueta">BLOG ESCOLAR</span>
+
+            <h2>Bienvenidos a nuestra escuela</h2>
+
+            <p>
+                Un espacio para compartir noticias, proyectos,
+                actividades, eventos y experiencias de nuestra
+                comunidad escolar.
+            </p>
+
+            <a href="noticias.html" class="boton">
+                Explorar noticias →
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<main class="contenedor">
+
+    <section class="seccion">
+
+        <div class="titulo-seccion">
+            <div>
+                <span class="subtitulo">ACTUALIDAD</span>
+                <h2>Lo más reciente</h2>
+            </div>
+
+            <a href="noticias.html">Ver todas →</a>
+        </div>
+
+
+        <div class="tarjetas">
+
+            <article class="tarjeta">
+
+                <img src="imagenes/noticia1.jpg"
+                     alt="Actividad escolar">
+
+                <div class="tarjeta-contenido">
+
+                    <span class="categoria">Noticias</span>
+
+                    <h3>Actividad escolar reúne a los estudiantes</h3>
+
+                    <p>
+                        Nuestra comunidad participó en una actividad
+                        llena de aprendizaje y convivencia.
+                    </p>
+
+                    <a href="noticias.html">
+                        Leer artículo →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="tarjeta">
+
+                <img src="imagenes/noticia2.jpg"
+                     alt="Estudiantes trabajando">
+
+                <div class="tarjeta-contenido">
+
+                    <span class="categoria">Educación</span>
+
+                    <h3>Nuevos proyectos para este ciclo escolar</h3>
+
+                    <p>
+                        Conoce algunos de los proyectos que nuestros
+                        estudiantes están preparando.
+                    </p>
+
+                    <a href="proyectos.html">
+                        Conocer proyectos →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="tarjeta">
+
+                <img src="imagenes/proyecto1.jpg"
+                     alt="Proyecto escolar">
+
+                <div class="tarjeta-contenido">
+
+                    <span class="categoria">Proyectos</span>
+
+                    <h3>Ideas que se convierten en realidad</h3>
+
+                    <p>
+                        Descubre el talento y la creatividad de
+                        nuestros estudiantes.
+                    </p>
+
+                    <a href="proyectos.html">
+                        Ver proyectos →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <section class="destacado">
+
+        <div>
+
+            <span class="subtitulo">NUESTRA COMUNIDAD</span>
+
+            <h2>Aprendemos, compartimos y crecemos juntos.</h2>
+
+            <p>
+                Este blog es un espacio creado para que estudiantes,
+                docentes y familias conozcan lo que ocurre en nuestra
+                escuela.
+            </p>
+
+            <a href="galeria.html" class="boton boton-claro">
+                Ver galería
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="seccion">
+
+        <div class="titulo-seccion">
+
+            <div>
+                <span class="subtitulo">AGENDA</span>
+                <h2>Próximos eventos</h2>
+            </div>
+
+            <a href="eventos.html">Ver calendario →</a>
+
+        </div>
+
+
+        <div class="eventos">
+
+            <div class="evento">
+
+                <div class="fecha">
+                    <strong>15</strong>
+                    <span>OCT</span>
+                </div>
+
+                <div>
+                    <h3>Feria de ciencias</h3>
+                    <p>Patio principal · 10:00 h</p>
+                </div>
+
+            </div>
+
+
+            <div class="evento">
+
+                <div class="fecha">
+                    <strong>20</strong>
+                    <span>OCT</span>
+                </div>
+
+                <div>
+                    <h3>Festival cultural</h3>
+                    <p>Auditorio escolar · 12:00 h</p>
+                </div>
+
+            </div>
+
+
+            <div class="evento">
+
+                <div class="fecha">
+                    <strong>28</strong>
+                    <span>OCT</span>
+                </div>
+
+                <div>
+                    <h3>Exposición de proyectos</h3>
+                    <p>Salones de clase · 09:00 h</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 
 </main>
 
+
 <footer>
-    Blog escolar · 2026
+
+    <div class="contenedor footer-contenido">
+
+        <div>
+            <h2>🎓 La Voz Escolar</h2>
+            <p>
+                Blog oficial de nuestra comunidad escolar.
+            </p>
+        </div>
+
+        <div>
+            <h3>Enlaces</h3>
+            <a href="index.html">Inicio</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="galeria.html">Galería</a>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 La Voz Escolar · Proyecto escolar
+    </div>
+
 </footer>
 
 </body>
 </html>
+
