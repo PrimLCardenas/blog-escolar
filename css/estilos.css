@@ -1,0 +1,421 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --azul: #2563eb;
+    --azul-oscuro: #172554;
+    --azul-claro: #eff6ff;
+    --texto: #1e293b;
+    --gris: #64748b;
+    --fondo: #f8fafc;
+    --blanco: #ffffff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--fondo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.encabezado {
+    background: var(--blanco);
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.barra {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo > span {
+    font-size: 35px;
+}
+
+.logo h1 {
+    font-size: 20px;
+    color: var(--azul-oscuro);
+}
+
+.logo p {
+    font-size: 12px;
+    color: var(--gris);
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #475569;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: var(--azul);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(23, 37, 84, 0.95),
+            rgba(37, 99, 235, 0.75)
+        ),
+        url("../imagenes/escuela.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    min-height: 480px;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+}
+
+.hero-contenido {
+    max-width: 1150px;
+}
+
+.hero h2 {
+    max-width: 700px;
+    font-size: clamp(40px, 6vw, 70px);
+    line-height: 1.05;
+    margin: 20px 0;
+}
+
+.hero p {
+    max-width: 650px;
+    font-size: 19px;
+    color: #e0e7ff;
+    margin-bottom: 30px;
+}
+
+.etiqueta,
+.subtitulo {
+    color: #60a5fa;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.boton {
+    display: inline-block;
+    background: white;
+    color: var(--azul-oscuro);
+    padding: 13px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.boton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.boton-claro {
+    background: var(--azul);
+    color: white;
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+.seccion {
+    padding: 75px 0;
+}
+
+.titulo-seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 30px;
+}
+
+.titulo-seccion h2 {
+    font-size: 32px;
+    margin-top: 5px;
+}
+
+.titulo-seccion > a {
+    color: var(--azul);
+    font-weight: bold;
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.tarjeta {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.07);
+    transition: 0.25s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(15, 23, 42, 0.12);
+}
+
+.tarjeta img {
+    height: 210px;
+    object-fit: cover;
+}
+
+.tarjeta-contenido {
+    padding: 25px;
+}
+
+.categoria {
+    color: var(--azul);
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tarjeta h3 {
+    font-size: 21px;
+    margin: 10px 0;
+}
+
+.tarjeta p {
+    color: var(--gris);
+    margin-bottom: 20px;
+}
+
+.tarjeta a {
+    color: var(--azul);
+    font-weight: bold;
+}
+
+
+/* =========================
+   DESTACADO
+========================= */
+
+.destacado {
+    background: var(--azul-oscuro);
+    color: white;
+    border-radius: 18px;
+    padding: 60px;
+    margin: 20px 0 50px;
+}
+
+.destacado h2 {
+    font-size: 38px;
+    max-width: 700px;
+    margin: 15px 0;
+}
+
+.destacado p {
+    max-width: 650px;
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   EVENTOS
+========================= */
+
+.eventos {
+    display: grid;
+    gap: 15px;
+}
+
+.evento {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+}
+
+.fecha {
+    background: var(--azul-claro);
+    color: var(--azul);
+    min-width: 70px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.fecha strong {
+    display: block;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.fecha span {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.evento h3 {
+    margin-bottom: 3px;
+}
+
+.evento p {
+    color: var(--gris);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #0f172a;
+    color: white;
+    margin-top: 50px;
+}
+
+.footer-contenido {
+    padding: 50px 0;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.footer-contenido p {
+    color: #94a3b8;
+}
+
+.footer-contenido h3 {
+    margin-bottom: 10px;
+}
+
+.footer-contenido a {
+    display: block;
+    color: #cbd5e1;
+    margin: 5px 0;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #1e293b;
+    padding: 20px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+
+/* =========================
+   CELULARES
+========================= */
+
+@media (max-width: 800px) {
+
+    .barra {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero h2 {
+        font-size: 45px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-seccion {
+        align-items: start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .destacado {
+        padding: 35px 25px;
+    }
+
+    .destacado h2 {
+        font-size: 30px;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+    }
+}
