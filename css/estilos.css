@@ -55,7 +55,7 @@ a {
 }
 
 .barra {
-    min-height: 280px;
+    min-height: 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -120,7 +120,7 @@ nav a:hover {
     display: flex;
     align-items: center;
 
-    color: red;
+    color: white;
 }
 
 .hero-contenido {
