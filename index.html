@@ -3,279 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Escuela Primaria Lázaro Cárdenas</title>
-
+    <title>Escuela Primaria Lázaro Cárdenas - Blog Escolar</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <!-- Fuente moderna Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+<!-- ENCABEZADO Y NAVEGACIÓN -->
 <header class="encabezado">
-
     <div class="contenedor barra">
-
         <div class="logo">
-            <span>🎓</span>
+            <span class="icono-logo">🎓</span>
             <div>
                 <h1>Escuela Primaria Lázaro Cárdenas</h1>
-                <p>El blog de nuestra comunidad</p>
+                <p>El blog de nuestra comunidad escolar</p>
             </div>
         </div>
 
         <nav>
-            <a href="index.html">Inicio</a>
-            <a href="noticias.html">Novedades</a>
-            <a href="proyectos.html">Proyectos</a>
-            <a href="galeria.html">Galería</a>
-            <a href="eventos.html">Eventos</a>
-            <a href="becas.html">Becas</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#novedades">Novedades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#galeria">Galería</a>
+            <a href="#eventos">Eventos</a>
+            <a href="#becas">Becas</a>
         </nav>
-
     </div>
-
 </header>
 
-
-<section class="hero">
-
-    <div class="contenedor hero-contenido">
-
-        <div>
-            <span class="etiqueta">BLOG ESCOLAR</span>
-
-            <h2>Blog *Primaria Lázaro Cárdenas* </h2>
-
-            <p>
-                Un espacio dónde encontrarás las noticias relevantes, proyectos,
-                actividades, eventos y experiencias de nuestra
-                comunidad escolar.
-               
-            </p>
-            
-
-            <a href="noticias.html" class="boton">
-                Explorar novedades →
-            </a>
+<!-- HERO CON IMAGEN DE LÁZARO CÁRDENAS -->
+<section id="inicio" class="hero">
+    <div class="hero-overlay">
+        <div class="contenedor hero-contenido">
+            <div class="hero-tarjeta">
+                <span class="etiqueta">BLOG ESCOLAR</span>
+                <h2>Primaria General Lázaro Cárdenas</h2>
+                <p>
+                    Honor, educación y comunidad. Un espacio donde encontrarás las noticias más relevantes, proyectos de nuestros alumnos, eventos culturales y convocatorias escolares.
+                </p>
+                <a href="#novedades" class="boton">Explorar novedades ↓</a>
+            </div>
         </div>
-
     </div>
-
 </section>
 
-
+<!-- CONTENIDO PRINCIPAL -->
 <main class="contenedor">
 
-    <section class="seccion">
-
+    <!-- SECCIÓN DE NOVEDADES -->
+    <section id="novedades" class="seccion">
         <div class="titulo-seccion">
-            <div>
-                <span class="subtitulo">ACTUALIDAD</span>
-                <h2>Lo más reciente</h2>
-            </div>
-
-            <a href="noticias.html">Ver todas →</a>
+            <span class="subtitulo">ACTUALIDAD</span>
+            <h2>Lo más reciente</h2>
+            <p>Este blog es un espacio creado para que estudiantes, docentes y familias conozcan lo que ocurre día a día en nuestra institución.</p>
         </div>
 
-
-        <div class="tarjetas">
-
+        <div class="grid-tarjetas">
             <article class="tarjeta">
-
-                <img src="imagenes/clasecompu.jpeg"
-                     alt="Actividad escolar">
-
-                <div class="tarjeta-contenido">
-
-                    <span class="categoria">Novedades</span>
-
-                    <h3>Estudiantes de segundo grado interactúan con los elementos físicos (hardware) de la computadora.</h3>
-
-                    <p>
-                        Nuestra comunidad participó en una actividad
-                        llena de aprendizaje tecnológico. El pasado lunes 23 de Septiembre se llevó a cabo una actividad escrita
-                        en el aula de cómputo escolar donde el estudiantado conoció los elementos físicos de la computadora.
-                    </p>
-
-                    <a href="noticias.html">
-                        Leer artículo →
-                    </a>
-
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=600&auto=format&fit=crop" alt="Regreso a clases">
+                <div class="tarjeta-body">
+                    <span class="categoria">Institucional</span>
+                    <h3>Inicio del ciclo escolar y bienvenida</h3>
+                    <p>Damos la cordial bienvenida a todos nuestros estudiantes de 1° a 6° grado. ¡Listos para aprender juntos!</p>
                 </div>
-
             </article>
 
-
             <article class="tarjeta">
-
-                <img src="imagenes/cte.jpg"
-                     alt="Docentes trabajando">
-
-                <div class="tarjeta-contenido">
-
-                    <span class="categoria">Planeación</span>
-
-                    <h3>Consejo técnico escolar escolar</h3>
-
-                    <p>
-                        Conoce los temas que se abordaron en el primer consejo técnico del ciclo escolar 2026-2027
-                    </p>
-
-                    <a href="proyectos.html">
-                        Explorar acuerdos →
-                    </a>
-
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=600&auto=format&fit=crop" alt="Taller de lectura">
+                <div class="tarjeta-body">
+                    <span class="categoria">Académico</span>
+                    <h3>Inauguración del Rincón de Lectura</h3>
+                    <p>Promovemos el hábito de la lectura con nuevos títulos disponibles en la biblioteca escolar.</p>
                 </div>
-
             </article>
-
-
-            <article class="tarjeta">
-
-                <img src="imagenes/proyecto1.jpg"
-                     alt="Proyecto escolar">
-
-                <div class="tarjeta-contenido">
-
-                    <span class="categoria">Proyectos</span>
-
-                    <h3>Ideas que se convierten en realidad</h3>
-
-                    <p>
-                        Descubre el talento y la creatividad de
-                        nuestros estudiantes.
-                    </p>
-
-                    <a href="proyectos.html">
-                        Ver proyectos →
-                    </a>
-
-                </div>
-
-            </article>
-
         </div>
-
     </section>
 
-
-    <section class="destacado">
-
-        <div>
-
-            <span class="subtitulo">NUESTRA COMUNIDAD</span>
-
-            <h2>Aprendemos, compartimos y crecemos juntos.</h2>
-
-            <p>
-                Este blog es un espacio creado para que estudiantes,
-                docentes y familias conozcan lo que ocurre en nuestra
-                escuela.
-            </p>
-
-            <a href="galeria.html" class="boton boton-claro">
-                Ver galería
-            </a>
-
+    <!-- SECCIÓN DE PROYECTOS -->
+    <section id="proyectos" class="seccion fondo-suave">
+        <div class="titulo-seccion">
+            <span class="subtitulo">INNOVACIÓN Y CIENCIA</span>
+            <h2>Proyectos Estudiantiles</h2>
+            <p>Iniciativas destacadas desarrolladas por nuestros alumnos con guía de sus profesores.</p>
         </div>
 
-    </section>
-
-
-    <section class="seccion">
-
-        <div class="titulo-seccion">
-
-            <div>
-                <span class="subtitulo">AGENDA</span>
-                <h2>Próximos eventos</h2>
+        <div class="grid-tarjetas">
+            <div class="tarjeta">
+                <div class="tarjeta-body">
+                    <span class="categoria">Medio Ambiente</span>
+                    <h3>Huerto Escolar Comunitario</h3>
+                    <p>Los alumnos de 5° grado cultivan hortalizas y aprenden sobre sustentabilidad y biología de forma práctica.</p>
+                </div>
             </div>
 
-            <a href="eventos.html">Ver calendario →</a>
+            <div class="tarjeta">
+                <div class="tarjeta-body">
+                    <span class="categoria">Tecnología</span>
+                    <h3>Taller de Reciclaje Electrónico</h3>
+                    <p>Concientización sobre la basura electrónica y reutilización creativa de componentes en robótica básica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- SECCIÓN DE GALERÍA -->
+    <section id="galeria" class="seccion">
+        <div class="titulo-seccion">
+            <span class="subtitulo">RECUERDOS Y VIVENCIAS</span>
+            <h2>Galería Fotografíca</h2>
         </div>
 
+        <div class="galeria-grid">
+            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=400&auto=format&fit=crop" alt="Alumnos en clase">
+            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=400&auto=format&fit=crop" alt="Patio escolar">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=400&auto=format&fit=crop" alt="Material de estudio">
+            <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=400&auto=format&fit=crop" alt="Deportes">
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE EVENTOS -->
+    <section id="eventos" class="seccion fondo-suave">
+        <div class="titulo-seccion">
+            <span class="subtitulo">AGENDA</span>
+            <h2>Próximos Eventos</h2>
+        </div>
 
         <div class="eventos">
-
             <div class="evento">
-
                 <div class="fecha">
                     <strong>15</strong>
                     <span>OCT</span>
                 </div>
-
                 <div>
-                    <h3>Feria de ciencias</h3>
+                    <h3>Feria de las Ciencias</h3>
                     <p>Patio principal · 10:00 h</p>
                 </div>
-
             </div>
 
-
             <div class="evento">
-
                 <div class="fecha">
                     <strong>20</strong>
                     <span>OCT</span>
                 </div>
-
                 <div>
-                    <h3>Festival cultural</h3>
+                    <h3>Festival Cultural conmemora a Lázaro Cárdenas</h3>
                     <p>Auditorio escolar · 12:00 h</p>
                 </div>
-
             </div>
 
-
             <div class="evento">
-
                 <div class="fecha">
                     <strong>28</strong>
                     <span>OCT</span>
                 </div>
-
                 <div>
-                    <h3>Exposición de proyectos</h3>
+                    <h3>Exposición de Proyectos y Arte</h3>
                     <p>Salones de clase · 09:00 h</p>
                 </div>
-
             </div>
+        </div>
+    </section>
 
+    <!-- SECCIÓN DE BECAS Y APOYOS -->
+    <section id="becas" class="seccion">
+        <div class="titulo-seccion">
+            <span class="subtitulo">APOYOS A FAMILIAS</span>
+            <h2>Becas y Convocatorias</h2>
         </div>
 
+        <div class="tarjeta-info-beca">
+            <h3>Beca para el Bienestar Benito Juárez / Apoyos Escolares</h3>
+            <p>Recuerda consultar periódicamente las fechas de registro e integración de expedientes en la dirección del plantel.</p>
+            <ul>
+                <li>📄 Copia de acta de nacimiento del alumno.</li>
+                <li>📄 Identificación oficial del tutor (INE).</li>
+                <li>📄 Comprobante de domicilio reciente.</li>
+            </ul>
+        </div>
     </section>
 
 </main>
 
-
+<!-- PIE DE PÁGINA -->
 <footer>
-
     <div class="contenedor footer-contenido">
-
         <div>
-            <h2>🎓 La Voz Escolar</h2>
-            <p>
-                Blog oficial de nuestra comunidad escolar.
-            </p>
+            <h2>🎓 Escuela Lázaro Cárdenas</h2>
+            <p>Blog oficial de la comunidad educativa. Formando el futuro con valores y conocimiento.</p>
         </div>
 
         <div>
-            <h3>Enlaces</h3>
-            <a href="index.html">Inicio</a>
-            <a href="noticias.html">Noticias</a>
-            <a href="proyectos.html">Proyectos</a>
-            <a href="galeria.html">Galería</a>
+            <h3>Navegación Rápida</h3>
+            <div class="enlaces-footer">
+                <a href="#inicio">Inicio</a>
+                <a href="#novedades">Novedades</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#galeria">Galería</a>
+                <a href="#eventos">Eventos</a>
+                <a href="#becas">Becas</a>
+            </div>
         </div>
-
     </div>
 
     <div class="copyright">
-        © 2026 La Voz Escolar · Proyecto escolar
+        © 2026 Escuela Primaria Lázaro Cárdenas · Todos los derechos reservados.
     </div>
-
 </footer>
 
 </body>
 </html>
-
