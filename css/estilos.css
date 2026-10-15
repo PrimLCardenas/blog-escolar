@@ -38,7 +38,7 @@ body {
    HEADER & NAV
    =================================================== */
 .encabezado {
-    background-color: var(--color-primario);
+    background-color: var(--color-primario, #87ceeb);
     color: var(--color-blanco);
     position: sticky;
     top: 0;
