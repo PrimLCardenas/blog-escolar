@@ -101,8 +101,10 @@ nav a:hover {
 .hero {
     /* Imagen del General Lázaro Cárdenas vía Wikimedia Commons */
     position: relative;
-    color: var(--color-blanco);
-    min-height: 420px;
+    overflow: hidden;
+    width: 100%;
+    min-height: 80vh;
+    background-color: #222;
 }
 
 .hero-carrusel-fondo {
