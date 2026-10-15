@@ -133,6 +133,12 @@ nav a:hover {
    justify-content: center;
    
 }
+
+.hero-contenido {
+     position: absolute;
+     z-iondex: 2;
+     width: 100%;
+}
 @keyframes carruselFondo {
    0%, 100% {
       background-image: url(/imagenes/clasecompu.jpeg);
@@ -143,11 +149,6 @@ nav a:hover {
    66% {
       background-image: url("../imagenes/21.jpeg");
    }
-}
-.hero-contenido {
-     position: absolute;
-     z-iondex: 2;
-     width: 100%;
 }
 
 .hero-tarjeta {
