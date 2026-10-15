@@ -104,7 +104,9 @@ nav a:hover {
     overflow: hidden;
     width: 100%;
     min-height: 80vh;
-    background-color: #222;
+    display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .hero-carrusel-fondo {
@@ -120,14 +122,18 @@ nav a:hover {
 }
 
 .hero-overlay {
-    position: relative;
-   z-iondex: 2;
-   background-color: rgba(0, 0, 0, 0.5) 0%, rgba(27, 54, 93, 0.5) 100%);
-    width: 100%;
-    height: 100%;
-    align-items: center;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 2;
+   background-color: rgba(0, 0, 0, 0.5) 0%;
+   display: flex;
+   alingn-items: center;
+   justify-content: center;
+   
 }
-@keyframes carruselDonfo {
+@keyframes carruselFondo {
    0%, 100% {
       background-image: url("../imagenes/clasecompu.jpeg");
    }
@@ -139,7 +145,9 @@ nav a:hover {
    }
 }
 .hero-contenido {
-    width: 100%;
+     position: absolute;
+     z-iondex: 2;
+     width: 100%;
 }
 
 .hero-tarjeta {
