@@ -135,7 +135,7 @@ nav a:hover {
 }
 @keyframes carruselFondo {
    0%, 100% {
-      background-image: url("../imagenes/clasecompu.jpeg");
+      background-image: url(/imagenes/clasecompu.jpeg);
    }
    33% {
       background-image: url("../imagenes/Folclor_mexicano_-_Día_de_muertos_(1).jpg");
