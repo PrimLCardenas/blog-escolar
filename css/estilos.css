@@ -4,7 +4,7 @@
 :root {
     --color-primario: #1b365d;    /* Azul institucional */
     --color-secundario: #008080;  /* Verde azulado */
-    --color-acento: #e65100;      /* Naranja para botones y destacados */
+    --color-acento: #ff6d00;      /* Naranja para botones y destacados */
     --color-texto: #333333;
     --color-gris-claro: #f4f6f8;
     --color-blanco: #ffffff;
@@ -348,6 +348,26 @@ body {
     margin-bottom: 8px;
 }
 
+/* ===================================================
+   NUEVO: ESTILOS PARA LOS BOTONES DE NAVEGACIÓN
+   =================================================== */
+nav a, .barra a {
+    color: var(--color-blanco) !important; /* Fuerza a que las letras sean blancas sobre el fondo azul */
+    background-color: var(--color-acento); /* Usa el fondo naranja brillante */
+    padding: 8px 16px;                     /* Le da forma acolchada de botón */
+    border-radius: 6px;                    /* Bordes redondeados modernos */
+    text-decoration: none;                 /* Quita la línea de subrayado */
+    font-weight: bold;                     /* Hace la letra más gruesa */
+    font-size: 0.95rem;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto al pasar el mouse por encima (Hover) */
+nav a:hover, .barra a:hover {
+    background-color: #e65100;             /* Se oscurece un poco al apuntarlo */
+    transform: translateY(-2px);           /* Pequeño efecto de flotación */
+}
 /* ===================================================
    GRID DE TARJETAS (DOCENTES)
    =================================================== */
