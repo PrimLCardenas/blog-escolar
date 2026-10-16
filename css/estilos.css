@@ -143,15 +143,9 @@ nav a:hover {
      justify.content: center;
 }
 @keyframes carruselfondo {
-   0%, 100% {
-      background-image: url("../imagenes/clasecompu.jpeg");
-   }
-   33% {
-      background-image: url("../imagenes/Folclor_mexicano_-_Día_de_muertos_(1).jpg");
-   }
-   66% {
-      background-image: url("../imagenes/21.jpeg");
-   }
+   0%, 100% {background-image: url("../imagenes/clasecompu.jpeg"); }
+   33% {background-image: url("../imagenes/Folclor_mexicano_-_Día_de_muertos_(1).jpg");}
+   66% {background-image: url("../imagenes/21.jpeg");}
 }
 
 .hero-tarjeta {
