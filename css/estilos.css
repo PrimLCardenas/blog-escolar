@@ -99,7 +99,7 @@ body {
    z-index: 1;
    background-size: cover;
    background-position: center;
-   animation: carruselfondo 15s infinite ease-in-out;
+   animation: carruselfondo 25s infinite ease-in-out;
 }
 
 @keyframes carruselfondo {
