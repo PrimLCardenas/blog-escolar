@@ -108,13 +108,23 @@ body {
       background-size: cover;
       background-position: center;
  }
-   33% {
+   20% {
       background-image: url("../imagenes/20.jpeg");
       background-size: cover;
       background-position: center;
  }
-   66% {
-      background-image: url("../imagenes/21.jpeg");
+   40% {
+      background-image: url("../imagenes/34.jpeg");
+      background-size: cover;
+      background-position: center;
+ }
+   60% {
+      background-image: url("../imagenes/40.jpeg");
+      background-size: cover;
+      background-position: center;
+ }
+   80% {
+      background-image: url("../imagenes/30.jpeg");
       background-size: cover;
       background-position: center;
  }
